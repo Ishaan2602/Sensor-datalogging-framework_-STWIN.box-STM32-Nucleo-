@@ -1,0 +1,29 @@
+{
+    "tags": [
+        {
+            "l": "Clockwise",
+            "e": false,
+            "ta": "2023-07-11T10:32:50.168Z"
+        },
+        {
+            "l": "Clockwise",
+            "e": true,
+            "ta": "2023-07-11T10:32:59.018Z"
+        },
+        {
+            "l": "Counter-Clockwise",
+            "e": false,
+            "ta": "2023-07-11T10:32:59.871Z"
+        }
+    ],
+    "name": "STWIN.Box_acquisition",
+    "description": "",
+    "uuid": "18972859-050f-441d-b869-601120598733",
+    "start_time": "2023-07-11T10:32:48.000Z",
+    "end_time": "2023-07-11T10:33:08.553Z",
+    "data_ext": ".dat",
+    "data_fmt": "HSD_2.0.0",
+    "interface": 1,
+    "schema_version": "2.0.0",
+    "c_type": 2
+}

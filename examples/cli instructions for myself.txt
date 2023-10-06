@@ -1,0 +1,1 @@
+1. get a device_config file from 

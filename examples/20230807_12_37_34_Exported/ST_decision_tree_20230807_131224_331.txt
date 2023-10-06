@@ -1,0 +1,42 @@
+F1_PeakToPeak_on_ACC_X <= 3.60256
+|   F2_PeakToPeak_on_ACC_Y <= 3.55078
+|   |   F3_PeakToPeak_on_ACC_Z <= 1.34863
+|   |   |   F1_PeakToPeak_on_ACC_X <= 0.335205: up_down (3.0)
+|   |   |   F1_PeakToPeak_on_ACC_X > 0.335205: left_right (2.0)
+|   |   F3_PeakToPeak_on_ACC_Z > 1.34863: up_down (39.0)
+|   F2_PeakToPeak_on_ACC_Y > 3.55078: left_right (39.0)
+F1_PeakToPeak_on_ACC_X > 3.60256: forward_back (40.0)
+
+Number of Leaves  : 	5
+Size of the tree : 	9
+
+
+class:
+ => up_down, left_right, forward_back, 
+features:
+ => F1_PeakToPeak_on_ACC_X, F2_PeakToPeak_on_ACC_Y, F3_PeakToPeak_on_ACC_Z, 
+
+
+Mean absolute error	0.941315
+Root mean squared error	0.941591
+ ======= Whole data training with Confidence Factor: 0.9 ========= 
+
+
+===== Confusion Matrix =====
+         	up_down  	left_rig	forward_	<-- classified as
+up_down  	42	0	0	
+left_rig	0	41	0	
+forward_	0	0	40	
+
+Total Number of Instances        : 123
+Correctly Classified Instances   : 123
+Incorrectly Classified Instances : 0
+Kappa Statistic: 0.333466
+Accuracy: 100%
+
+Report  :	precision	recall	support	
+up_down  	1    	1	 42
+left_rig	1    	1	 41
+forward_	1    	1	 40
+
+avg/total	1    	1	 123

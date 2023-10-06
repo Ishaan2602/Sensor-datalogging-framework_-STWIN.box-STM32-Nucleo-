@@ -1,0 +1,34 @@
+F1_PeakToPeak_on_ACC_V2 <= 1.33398: Still (20.0)
+F1_PeakToPeak_on_ACC_V2 > 1.33398: Shake (15.0)
+
+Number of Leaves  : 	2
+Size of the tree : 	3
+
+
+class:
+ => Still, Shake, 
+features:
+ => F1_PeakToPeak_on_ACC_V2, 
+
+
+Mean absolute error	1
+Root mean squared error	1
+ ======= Whole data training with Confidence Factor: 0.9 ========= 
+
+
+===== Confusion Matrix =====
+         	Still    	Shake    	<-- classified as
+Still    	20	0	
+Shake    	0	15	
+
+Total Number of Instances        : 35
+Correctly Classified Instances   : 35
+Incorrectly Classified Instances : 0
+Kappa Statistic: 0.510204
+Accuracy: 100%
+
+Report  :	precision	recall	support	
+Still    	1    	1	 20
+Shake    	1    	1	 15
+
+avg/total	1    	1	 35

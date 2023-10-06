@@ -1,0 +1,24 @@
+{
+    "tags": [
+        {
+            "l": "STILL",
+            "e": true,
+            "ta": "2023-08-04T16:05:45.163Z"
+        },
+        {
+            "l": "STILL",
+            "e": false,
+            "ta": "2023-08-04T16:05:46.268Z"
+        }
+    ],
+    "name": "STWIN.Box_acquisition",
+    "description": "",
+    "uuid": "25056ea4-2157-44b1-a88b-abbb0a181b26",
+    "start_time": "2023-08-04T16:05:23.000Z",
+    "end_time": "2023-08-04T16:05:49.900Z",
+    "data_ext": ".dat",
+    "data_fmt": "HSD_2.0.0",
+    "interface": 1,
+    "schema_version": "2.0.0",
+    "c_type": 2
+}

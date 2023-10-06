@@ -1,0 +1,41 @@
+@relation 'MLC'
+
+@attribute F1_PeakToPeak_on_ACC_V2 numeric
+@attribute class {Still, Shake}
+
+@data
+2.89648, Still
+5.125, Still
+5.86328, Still
+6.03516, Still
+5.55859, Still
+6.18359, Still
+7.90625, Still
+5.98438, Still
+6.31641, Still
+5.92578, Still
+7.90625, Still
+0.00488281, Shake
+0.00488281, Shake
+0.0244141, Shake
+0.00488281, Shake
+0.00390625, Shake
+0.00195313, Shake
+0.00292969, Shake
+1.13281, Shake
+0.62793, Shake
+0.345703, Shake
+0.244141, Shake
+0.229004, Shake
+0.287109, Shake
+0.130371, Shake
+0.291504, Shake
+0.585938, Shake
+0.630859, Shake
+0.657715, Shake
+1.1377, Shake
+1.03613, Shake
+1.10352, Shake
+1.28223, Shake
+0.742188, Shake
+1.29883, Shake

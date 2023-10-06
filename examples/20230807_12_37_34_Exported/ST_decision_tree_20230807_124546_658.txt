@@ -1,0 +1,52 @@
+F1_PeakToPeak_on_ACC_V2 <= 29.5119
+|   F1_PeakToPeak_on_ACC_V2 <= 14.3906
+|   |   F1_PeakToPeak_on_ACC_V2 <= 2.20703: up_down (3.0)
+|   |   F1_PeakToPeak_on_ACC_V2 > 2.20703: left_right (17.0/13.0)
+|   F1_PeakToPeak_on_ACC_V2 > 14.3906
+|   |   F1_PeakToPeak_on_ACC_V2 <= 21.7813: forward_back (16.0/11.0)
+|   |   F1_PeakToPeak_on_ACC_V2 > 21.7813
+|   |   |   F1_PeakToPeak_on_ACC_V2 <= 22.1563: left_right (3.0/1.0)
+|   |   |   F1_PeakToPeak_on_ACC_V2 > 22.1563
+|   |   |   |   F1_PeakToPeak_on_ACC_V2 <= 24.3281: forward_back (8.0/4.0)
+|   |   |   |   F1_PeakToPeak_on_ACC_V2 > 24.3281
+|   |   |   |   |   F1_PeakToPeak_on_ACC_V2 <= 25.7344
+|   |   |   |   |   |   F1_PeakToPeak_on_ACC_V2 <= 24.6406: up_down (2.0)
+|   |   |   |   |   |   F1_PeakToPeak_on_ACC_V2 > 24.6406: left_right (6.0/4.0)
+|   |   |   |   |   F1_PeakToPeak_on_ACC_V2 > 25.7344: forward_back (6.0/5.0)
+F1_PeakToPeak_on_ACC_V2 > 29.5119
+|   F1_PeakToPeak_on_ACC_V2 <= 29.5156: left_right (1.0)
+|   F1_PeakToPeak_on_ACC_V2 > 29.5156: up_down (17.0/6.0)
+
+Number of Leaves  : 	10
+Size of the tree : 	19
+
+
+class:
+ => up_down, left_right, forward_back, 
+features:
+ => F1_PeakToPeak_on_ACC_V2, 
+
+
+Mean absolute error	0.440451
+Root mean squared error	0.440623
+ ======= Whole data training with Confidence Factor: 0.9 ========= 
+
+
+===== Confusion Matrix =====
+         	up_down  	left_rig	forward_	<-- classified as
+up_down  	22	12	8	
+left_rig	2	27	12	
+forward_	4	6	30	
+
+Total Number of Instances        : 123
+Correctly Classified Instances   : 79
+Incorrectly Classified Instances : 44
+Kappa Statistic: 0.331879
+Accuracy: 64.2276%
+
+Report  :	precision	recall	support	
+up_down  	0.524    	0.786	 42
+left_rig	0.659    	0.6	 41
+forward_	0.75    	0.6	 40
+
+avg/total	0.642    	0.663	 123

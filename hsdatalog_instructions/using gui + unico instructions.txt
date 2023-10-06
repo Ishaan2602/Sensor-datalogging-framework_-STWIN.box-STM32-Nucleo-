@@ -1,0 +1,17 @@
+cli:
+1. Reset board. Open a cmd prompt in the examples folder and type python hsdatalog_gui.py. Connect the gui to the board.
+2. If board is reset, then all sensors will be active. Disable all sensors except the ones you want (accelerometer). You can load a custom config file if you want.
+3. Fix the ODR rate and FS. Set tags at the bottom of the screen if you want. If the tag says "Tag ON", that means the tag is off and needs to be clicked on to turn on. Start logging by clicking "Start Log".
+4. To plot power spectrum of shake motion: right-click on the graph window, then plot options, transforms, and power spectrum. This will show the frequency domain. The peak will indicate the dominant frequency. plot options will give multiple options, including transforms, downsample, average, and points. Transforms can give the power spectrum, logs, dy/dx, or even y vs y'.
+5. Pressing the "Stop Log" button will terminate the capture. A new data folder will be created. You can click "Plot the last acquision" to see plots of the most recent data capture.
+
+unico/mlc:
+1. Reset the board. Get some data seperated by tags in any way you want.
+2. Open a cmd prompt in the examples folder and write "python hsdatalog_to_unico.py -t [your data capture folder]". The "-t" option is there to seperate the data by tags. This will convert the data into a unico-compatible format in a new "Exported" folder.
+3. Open the unico tool and search the sensor name (ISM330DHCX). Uncheck the "Communication with the motherboard" option to disable unico from checking from an attached board. The MLC is specific to the sensor, not the board. There for any board with the specified sensor can be selected from the search results.
+4. Open the MLC tab on the bottom left. In the data patterns tab, click on "Browse...". Find the converted data folder and load in each tag file one-by-one. For each file, set the Class (Label) to the same name as the tag name.
+5. After loading in all the files, go to the configuration tab. Follow the process. Set the ODRs and FSs to the same values as the capture settings. Set decision trees. Window length means the decision tree will look at n number of samples (52 = 2 seconds) to make a decision. Set filters if needed. Classify the data by features (for still vs shake, Peak to Peak acc_v2 was used since the peak to peak values was the most distinguishing). The ARFF (attribute relation file format) file will contain all the MLC setting info just entered. Save it in the converted data folder with any name. Set values of output (btwn 0 and 255). Set calculation nodes (more complex the motion, the more nodes). Set confidence factor (btwn 0.7 and 0.9, too high = overfitting data to training set, too low = underfitting the data leading to false positives). Generate the decision tree file. The meta classifier file ensures that we have the same calculation value multiple times before ensuring the mlc output state. Save the ucf file, which will be saveed in the mcl core of the accelerometer. Save the file in the converted folder with the same name as the arrf file.
+6. Exit unico. Reset stwin board. Return to cmd prompt window. Open the gui. Load in the previous config file. Enable the sensor accelerometer and mlc device. In the dropdown for the mlc device, load in the ucf file. Start data logging.
+
+
+

@@ -1,0 +1,44 @@
+F1_ENERGY_on_ACC_X <= 77.9715
+|   F2_ENERGY_on_ACC_Y <= 66.75
+|   |   F3_ENERGY_on_ACC_Z <= 50.7188
+|   |   |   F1_ENERGY_on_ACC_X <= 1.29785: up_down (1.0)
+|   |   |   F1_ENERGY_on_ACC_X > 1.29785: left_right (2.0)
+|   |   F3_ENERGY_on_ACC_Z > 50.7188: up_down (41.0)
+|   F2_ENERGY_on_ACC_Y > 66.75: left_right (37.0)
+F1_ENERGY_on_ACC_X > 77.9715
+|   F2_ENERGY_on_ACC_Y <= 73.125: forward_back (40.0)
+|   F2_ENERGY_on_ACC_Y > 73.125: left_right (2.0)
+
+Number of Leaves  : 	6
+Size of the tree : 	11
+
+
+class:
+ => up_down, left_right, forward_back, 
+features:
+ => F1_ENERGY_on_ACC_X, F2_ENERGY_on_ACC_Y, F3_ENERGY_on_ACC_Z, F4_PeakToPeak_on_ACC_V2, 
+
+
+Mean absolute error	0.942101
+Root mean squared error	0.943025
+ ======= Whole data training with Confidence Factor: 0.9 ========= 
+
+
+===== Confusion Matrix =====
+         	up_down  	left_rig	forward_	<-- classified as
+up_down  	42	0	0	
+left_rig	0	41	0	
+forward_	0	0	40	
+
+Total Number of Instances        : 123
+Correctly Classified Instances   : 123
+Incorrectly Classified Instances : 0
+Kappa Statistic: 0.333466
+Accuracy: 100%
+
+Report  :	precision	recall	support	
+up_down  	1    	1	 42
+left_rig	1    	1	 41
+forward_	1    	1	 40
+
+avg/total	1    	1	 123

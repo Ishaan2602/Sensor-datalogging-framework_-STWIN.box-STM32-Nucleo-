@@ -1,0 +1,14 @@
+@relation 'MLC'
+
+@attribute F1_VAR_on_ACC_V2 numeric
+@attribute class {Clockwise}
+
+@data
+65536, Clockwise
+65536, Clockwise
+65536, Clockwise
+65536, Clockwise
+65536, Clockwise
+65536, Clockwise
+65536, Clockwise
+65536, Clockwise
