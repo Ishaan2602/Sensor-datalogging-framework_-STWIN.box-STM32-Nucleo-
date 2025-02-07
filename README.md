@@ -1,2 +1,2 @@
-This is a python-based sensor datalogging framework compatible with STWIN.box and STM32-Nucleo microsensors. Framework can record, extract data (into csv), and plot (with matplotlib) multiple sensors in single run (specifications of parameters in comments).
+This is a python-based sensor datalogging framework compatible with STWIN.box and STM32-Nucleo microsensors. Framework can record, extract data (into csv), and plot data of multiple sensors in single run (specifications of parameters in comments).
 I constructed this as part of a summer internship at GMU where I supported current research in  developing side-channel attack prevention mechanisms for sensor models in IoT devices
